@@ -119,7 +119,7 @@ const levy = function levy( command, node, size ){
 
 	console.log( command );
 
-	return child.execSync( command, { "cwd": process.cwd( ), "stdio": [ 0, 1, 2 ] } );
+	return child.execSync( command, { "cwd": process.cwd( ), "stdio": "inherit" } );
 };
 
 harden( "construct", construct, levy );

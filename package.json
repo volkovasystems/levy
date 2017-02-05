@@ -1,6 +1,6 @@
 {
   "name": "levy",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Alleviate NodeJS' memory limit.",
   "main": "levy.js",
   "bin": {
