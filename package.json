@@ -1,0 +1,43 @@
+{
+  "name": "levy",
+  "version": "0.0.0",
+  "description": "Alleviate NodeJS' memory limit.",
+  "main": "levy.js",
+  "bin": {
+    "levy": "run.js"
+  },
+  "scripts": {
+    "preinstall": "yarn global add n && n lts",
+    "test": "mocha levy-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/levy.git"
+  },
+  "keywords": [
+    "alleviate",
+    "nodejs",
+    "memory",
+    "limit",
+    "levy"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/levy/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/levy#readme",
+  "dependencies": {
+    "budge": "^0.6.0",
+    "depher": "^0.8.0",
+    "falzy": "^0.10.0",
+    "gnaw": "^0.3.0",
+    "harden": "^0.14.0",
+    "numric": "^0.7.0",
+    "raze": "^0.12.0",
+    "yargs": "^6.6.0"
+  },
+  "option": {
+    "shell": "levy"
+  }
+}
