@@ -52,8 +52,11 @@
 			"depher": "depher",
 			"falzy": "falzy",
 			"gnaw": "gnaw",
+			"harden": "harden",
+			"numric": "numric",
 			"os": "os",
-			"raze": "raze"
+			"raze": "raze",
+			"truly": "truly"
 		}
 	@end-include
 */
@@ -67,6 +70,7 @@ const harden = require( "harden" );
 const numric = require( "numric" );
 const os = require( "os" );
 const raze = require( "raze" );
+const truly = require( "truly" );
 
 const construct = function construct( command, node, size ){
 	/*;
@@ -79,7 +83,7 @@ const construct = function construct( command, node, size ){
 		@end-meta-configuration
 	*/
 
-	let parameter = raze( arguments );
+	let parameter = raze( arguments ).filter( truly );
 
 	node = depher( budge( parameter ), STRING, `n use ${ gnaw( "n --lts", true ) }` );
 
@@ -88,16 +92,18 @@ const construct = function construct( command, node, size ){
 		( ( memory ) => {
 			let factor = 2;
 
-			while( Math.pow( 2, ++factor ) < memory );
+			while( Math.pow( 2, ++factor ) < memory ){ }
 
 			return Math.pow( 2, --factor );
 		} )( Math.ceil( os.totalmem( ) / 1000000 / 2 ) ) );
 
 	command = command.split( /\s+/ );
-	let main = command[ 0 ];
-	command[ 0 ] = gnaw( `which ${ main }`, true );
-	if( falzy( command[ 0 ] ) ){
-		throw new Error( "cannot lookup bin path, ${ main }" );
+	if( command.length > 1 ){
+		let main = command[ 0 ];
+		command[ 0 ] = gnaw( `which ${ main }`, true );
+		if( falzy( command[ 0 ] ) ){
+			throw new Error( `cannot lookup bin path, ${ main }` );
+		}
 	}
 	command = command.join( " " );
 
@@ -115,7 +121,7 @@ const levy = function levy( command, node, size ){
 		@end-meta-configuration
 	*/
 
-	command = construct.apply( null, raze( arguments ) );
+	command = construct.apply( null, raze( arguments ).filter( truly ) );
 
 	console.log( command );
 

@@ -102,6 +102,13 @@ cemento@^0.7.0:
     babel-runtime "^6.22.0"
     harden "^0.14.0"
 
+cemento@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/cemento/-/cemento-0.8.0.tgz#b95751f73f408b70f14d440c1939018ba0bb6e21"
+  dependencies:
+    babel-runtime "^6.22.0"
+    harden "^0.14.0"
+
 clazof@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/clazof/-/clazof-0.4.0.tgz#d70192b2ce345f66cf4d1c6a145428cd1298fc9b"
@@ -218,6 +225,16 @@ doubt@^0.10.0:
     harden "^0.14.0"
     protype "^0.11.0"
 
+doubt@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/doubt/-/doubt-0.11.0.tgz#5f3e24f0f1ede9c94070a94c94392d8f54dccf64"
+  dependencies:
+    babel-runtime "^6.22.0"
+    cemento "^0.8.0"
+    falzy "^0.11.0"
+    harden "^0.14.0"
+    protype "^0.15.0"
+
 doubt@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/doubt/-/doubt-0.6.0.tgz#c5f15725443d00a8aa91694f9dce8d2021c9f0c1"
@@ -300,6 +317,13 @@ falzy@^0.10.0:
     babel-runtime "^6.22.0"
     protype "^0.11.0"
 
+falzy@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/falzy/-/falzy-0.11.0.tgz#61665d9714b3e0281491e8cd2de7d69726eadde3"
+  dependencies:
+    babel-runtime "^6.22.0"
+    protype "^0.15.0"
+
 falzy@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/falzy/-/falzy-0.7.0.tgz#ed5a866d8e91b0ae6b7a4a207e289bbfe42af77f"
@@ -366,8 +390,8 @@ harden@^0.14.0:
     babel-runtime "^6.22.0"
 
 hosted-git-info@^2.1.4:
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.1.5.tgz#0ba81d90da2e25ab34a332e6ec77936e1598118b"
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.2.0.tgz#7a0d097863d886c0fabbdcd37bf1758d8becf8a5"
 
 invert-kv@^1.0.0:
   version "1.0.0"
@@ -555,6 +579,14 @@ protype@^0.14.0:
     cemento "^0.7.0"
     harden "^0.14.0"
 
+protype@^0.15.0:
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/protype/-/protype-0.15.0.tgz#6cb05c750b098760dd268f0c21bae6339aa7d38d"
+  dependencies:
+    babel-runtime "^6.22.0"
+    cemento "^0.8.0"
+    harden "^0.14.0"
+
 protype@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/protype/-/protype-0.7.0.tgz#72d31005cb8d6abf2a6735049811d64770c3ede3"
@@ -606,6 +638,14 @@ raze@^0.12.0:
   dependencies:
     babel-runtime "^6.22.0"
     doubt "^0.10.0"
+    harden "^0.14.0"
+
+raze@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/raze/-/raze-0.13.0.tgz#639fce50a413fa0ff2f114f1ec85dc0a83ac264d"
+  dependencies:
+    babel-runtime "^6.22.0"
+    doubt "^0.11.0"
     harden "^0.14.0"
 
 raze@^0.6.0:
@@ -712,6 +752,13 @@ transpher@^0.4.0:
     ate "^0.7.0"
     babel-runtime "^6.22.0"
     falzy "^0.10.0"
+
+truly@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/truly/-/truly-0.11.0.tgz#7465f07bbf0ffec1566458fdc71f37cf3ec54170"
+  dependencies:
+    babel-runtime "^6.22.0"
+    protype "^0.15.0"
 
 truly@^0.5.0:
   version "0.5.0"

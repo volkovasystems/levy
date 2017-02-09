@@ -6,5 +6,6 @@ gnaw \
 harden \
 numric \
 raze \
+truly \
 yargs \
 --save
