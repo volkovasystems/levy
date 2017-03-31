@@ -34,6 +34,9 @@
 			"file": "levy.js",
 			"module": "levy",
 			"author": "Richeve S. Bebedor",
+			"contributors": [
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+			],
 			"eMail": "richeve.bebedor@gmail.com",
 			"repository": "https://github.com/volkovasystems/levy.git",
 			"test": "levy-test.js",
